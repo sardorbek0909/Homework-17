@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: crimson;
+    border: none;
+    margin: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 1s linear;
+    animation-name: box_animation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+button:hover{
+    color: crimson;
+    background-color: #fff;
+    border: 1px solid crimson;
+    transform: scale(1.2);
+    transform: translate(10px,10px);
+    transform: rotate(40deg);
+}
+@keyframes box_animation{
+    
+} */
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+}
+.wrapper__box{
+    width: 200px;
+    height: 200px;
+    border: 4px solid orange;
+    border-radius: 50%;
+    padding: 20px;
+    animation-name: box-animation1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+@keyframes box-animation1 {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    25%{
+        transform: rotateZ(90deg);
+    }
+    50%{
+        transform: rotateZ(180deg);
+    }
+    75%{
+        transform: rotateZ(270deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+
+.wrapper__bg{
+    width: 300px;
+    height: 200px;
+    margin-top: 100px;
+    background-color: rgb(1, 1, 66);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rad{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid rgb(42, 51, 85);
+    background: radial-gradient(rgb(74, 73, 73), rgb(12, 11, 11), rgb(115, 118, 136), rgb(66, 72, 91));
+    animation-name: box-animation2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.rad button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.wrapper__bg .rad button span{ 
+    color: rgb(1, 1, 66);
+    font-size: 25px;
+}
+@keyframes box-animation2 {
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+.wrapper__blog{
+    display: flex;
+    gap: 30px;
+    margin-top: 100px;
+}
+.blog1 button{
+    padding: 30px 80px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgb(238, 173, 53), rgb(207, 6, 6));
+}
+.blog1 button:hover{
+    background: linear-gradient(90deg, rgb(207, 6, 6),  rgb(238, 173, 53));
+}
+.blog2 button{
+    padding: 30px 80px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgb(226, 51, 214), rgb(136, 80, 247));
+}
+.blog2 button:hover{
+    background: linear-gradient(90deg,  rgb(136, 80, 247), rgb(226, 51, 214));
+}
+
+.blog3 button{
+    padding: 30px 80px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgb(21, 193, 67), rgb(10, 144, 161));
+}
+.blog3 button:hover{
+    background: linear-gradient(90deg, rgb(10, 144, 161), rgb(21, 193, 67));
+}
+.blogg{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+.blogg1 button{
+    padding: 30px 150px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgb(79, 6, 174), rgb(24, 203, 206));
+}
+.blogg1 button:hover{
+    background: linear-gradient(90deg, rgb(24, 203, 206), rgb(79, 6, 174));
+}
+.blogg2 button{
+    padding: 30px 150px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgb(253, 253, 58), rgb(171, 68, 5));
+}
+.blogg2 button:hover{
+    background: linear-gradient(90deg, rgb(171, 68, 5), rgb(253, 253, 58));
+}
+
+
+.wrapper__login button{
+    margin-top: 100px;
+    padding: 40px 100px;
+    background-color: rgb(55, 67, 128);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.wrapper__login button:hover{
+    border-radius: 50px;
+}
+.wrapper__login button:active{
+    background-color: rgb(42, 118, 41);
+}
